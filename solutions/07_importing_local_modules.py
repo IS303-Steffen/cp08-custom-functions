@@ -42,22 +42,22 @@ You can also import everything from a module doing this:
 # In this folder, I've included a module (a .py file) called "example_module"
 # Take a look at it. Then, in this file, import the module and then call
 # the multiply_2_numbers module and print the result.
-import example_module
+import solutions.example_module_01 as example_module_01
 
-print(example_module.multiply_2_numbers(2,4))
+print(example_module_01.multiply_2_numbers(2,4))
 
 # 2. GIVE A MODULE A NICKNAME
 # Import example_module again, but rename it to "em". Then call
 # multiply_2_numbers again and print the result.
 
-import example_module as em
+import solutions.example_module_01 as em
 print(em.multiply_2_numbers(2,4))
 
 
 # 3. IMPORT A SPECIFIC FUNCTION
 # Use the "from x import x" syntax to specifically import multiply_2_numbers
 # Call it again and print the result.
-from example_module import multiply_2_numbers
+from solutions.example_module_01 import multiply_2_numbers
 
 print(multiply_2_numbers(2,4))
 
@@ -67,5 +67,5 @@ print(multiply_2_numbers(2,4))
 # Import all the functions from exmaple_module, then run subtract_2_numbers
 # and print the result.
 
-from example_module import *
+from solutions.example_module_01 import *
 print(subtract_2_numbers(10,8))
